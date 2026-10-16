@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OpenBuild IDE — Build Android Apps on Your Phone</title>
+<meta name="description" content="Discover OpenBuild IDE, a mobile-first Android development environment designed for editing projects, managing toolchains, and building Android applications directly on your phone.">
+<meta name="theme-color" content="#F7F9FC">
+<!-- TODO before launch: replace REPLACE-WITH-YOUR-DOMAIN.example and add <link rel="canonical"> -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="OpenBuild IDE — Build Android Apps on Your Phone">
+<meta property="og:description" content="A mobile-first workspace for coding, project management, and Android builds.">
+<meta property="og:image" content="https://REPLACE-WITH-YOUR-DOMAIN.example/openbuild-social-card.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="OpenBuild IDE banner showing the app on an Android phone">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OpenBuild IDE — Build Android Apps on Your Phone">
+<meta name="twitter:description" content="A mobile-first workspace for coding, project management, and Android builds.">
+<meta name="twitter:image" content="https://REPLACE-WITH-YOUR-DOMAIN.example/openbuild-social-card.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"OpenBuild IDE","applicationCategory":"DeveloperApplication","operatingSystem":"Android","description":"A mobile-first Android development environment for editing projects, managing toolchains, and building Android applications on a phone."}</script>
+</head>
+<body>
+<div class="top"><i aria-hidden="true"></i>Built for developers who build on the move · Android IDE</div>
+<header>
+<div class="wrap bar">
+<a class="brand" href="#top" aria-label="OpenBuild IDE home"><img src="logo.svg" width="34" height="34" alt=""><span>OpenBuild <span>IDE</span></span></a>
+<button id="menu-btn" aria-expanded="false" aria-controls="nav" aria-label="Toggle navigation menu"><span></span></button>
+<nav id="nav" aria-label="Main">
+<a href="#features">Features</a><a href="#how">How It Works</a><a href="#build">Build System</a><a href="#roadmap">Roadmap</a><a class="pill" href="#cta">Get Updates</a>
+</nav>
+</div>
+</header>
+<main id="top">
+<section class="hero"><div class="wrap">
+<div class="hg">
+<div>
+<p class="eyebrow">Android development, reimagined</p>
+<h1>Your ideas.<br>Your device.<br><span class="bl">Your next app.</span></h1>
+<p class="lead">OpenBuild IDE is a mobile-first development environment designed to help you create Android applications directly on your phone. Work with project files, configure development tools, and build Android projects through a real Gradle workflow.</p>
+<div class="row"><a class="btn p" href="#product">Explore OpenBuild ↗</a><a class="btn" href="#roadmap">Project Status ↓</a></div>
+</div>
+<div class="vis" aria-label="Illustrative editor and build panel">
+<div class="fl fl2"><b>Build Center</b>Task: <span class="k">assembleDebug</span><small>Illustrative — not a real build result</small></div>
+<div class="ed">
+<div class="tabs"><span class="on">MainActivity.java</span><span>activity_main.xml</span></div>
+<pre aria-label="Example Java code"><span class="l"><span class="k">package</span> com.example.myapp;</span><span class="l"> </span><span class="l"><span class="k">import</span> android.os.Bundle;</span><span class="l"><span class="k">import</span> android.widget.TextView;</span><span class="l"> </span><span class="l"><span class="k">public class</span> MainActivity {</span><span class="l"> </span><span class="l">    <span class="a">@Override</span></span><span class="l">    <span class="k">protected void</span> onCreate(Bundle state) {</span><span class="l">        <span class="k">super</span>.onCreate(state);</span><span class="l"> </span><span class="l">        setContentView(R.layout.<span class="s">activity_main</span>);</span><span class="l">    }</span><span class="l">}</span></pre>
+<div class="sb"><span>Java · UTF-8</span><span>Gradle · JDK · SDK</span></div>
+</div>
+<div class="fl"><b>Toolchain</b>JDK · Gradle · Android SDK · Build Tools<small>Example layout. Status depends on your device.</small></div>
+</div>
+</div>
+<div class="meta"><span>INTRODUCTION</span><span>SCROLL TO EXPLORE</span><span>OPENBUILD IDE</span></div>
+</div></section>
+
+<section id="product"><div class="wrap">
+<div class="pos rv">
+<div><p class="eyebrow">A different kind of workspace</p><h2>Desktop-level intent.<br>Mobile-first design.</h2></div>
+<div><p>OpenBuild is built around a simple idea: your phone can be more than a place to read code. It can be a place to create, edit, configure, and build real Android projects.</p><p>By focusing on actual project files, compatible toolchains, visible build logs, and accessible output locations, OpenBuild aims to make mobile development more practical.</p></div>
+</div>
+<div class="strip rv"><div>MOBILE-FIRST IDE</div><div>JAVA AND XML WORKFLOW</div><div>ANDROID BUILD OUTPUTS</div><div>ARM64 TOOLCHAIN SUPPORT</div></div>
+<p class="tag" style="margin-top:12px">Availability of individual capabilities can depend on the release and on your device.</p>
+</div></section>
+
+<section id="features" style="background:var(--mu)"><div class="wrap">
+<p class="eyebrow">The toolkit</p><h2>Everything in its<br>right place.</h2>
+<p class="lead" style="margin-top:16px">Thoughtful tools for the parts of Android development that matter: your files, your code, your environment, and the build itself.</p>
+<div class="fg">
+<article class="f w4 rv"><h3>A focused code editor</h3><p>Work with source files, Android resources, and project configuration in a workspace designed for mobile development.</p>
+<div class="mini"><span class="tag">MainActivity.java  ·  activity_main.xml</span>
+<span class="k">&lt;LinearLayout</span> <span class="a">android:orientation</span>=<span class="s">"vertical"</span><span class="k">&gt;</span>
+  <span class="k">&lt;TextView</span> <span class="a">android:text</span>=<span class="s">"Hello"</span> <span class="k">/&gt;</span>
+<span class="k">&lt;/LinearLayout&gt;</span></div></article>
+<article class="f rv"><h3>Build with real tools</h3><p>Use a real Android Gradle build workflow, with visible tasks and diagnostics tied to the build process.</p>
+<div class="mini">$ ./gradlew assembleDebug
+<span class="c">illustrative example</span></div></article>
+<article class="f rv"><h3>Your project, organized</h3><p>Navigate project files, source folders, Android resources, manifests, and build scripts.</p>
+<div class="mini lt">MyApplication/
+├── app/
+├── gradle/
+├── settings.gradle
+└── build.gradle</div></article>
+<article class="f tint rv"><h3>Know your environment</h3><p>Keep track of the JDK, Gradle installation, Android SDK, and Android Build Tools required for a project.</p>
+<div class="tc"><span>JDK</span><span>Gradle</span><span>Android SDK</span><span>Build Tools</span></div></article>
+<article class="f rv"><h3>Understand the failure</h3><p>Build logs should help developers locate errors, understand configuration issues, and identify the next debugging step.</p>
+<div class="mini"><span class="c">// illustrative log</span>
+&gt; Task :app:compileDebugJavaWithJavac
+<span class="a">hint:</span> check JDK / AGP compatibility</div></article>
+<article class="f w6 rv"><h3>Find the output</h3><p>Make generated APKs and other build artifacts easier to locate, inspect, and manage.</p>
+<div class="mini lt">app/build/outputs/apk/debug/</div></article>
+</div>
+</div></section>
+
+<section id="how"><div class="wrap">
+<p class="eyebrow">A clearer process</p><h2>From first file<br>to build output.</h2>
+<ol class="wf">
+<li class="rv"><h3>Create or Open</h3><p>Start a new project from a template or open an existing Android project.</p><div class="mini lt">MyApplication/</div></li>
+<li class="rv"><h3>Write and Edit</h3><p>Work on Java source files, XML layouts, resources, manifests, and build configuration.</p><div class="mini">class MainActivity {…}</div></li>
+<li class="rv"><h3>Configure</h3><p>Verify the required Java runtime, Gradle version, Android SDK, and Build Tools.</p><div class="mini lt">JDK · Gradle · SDK · Tools</div></li>
+<li class="rv"><h3>Build and Inspect</h3><p>Run the appropriate Gradle task, inspect its output, and locate the generated artifact.</p><div class="mini">&gt; Task :app:assembleDebug</div></li>
+</ol>
+</div></section>
+
+<section id="build" class="dark"><div class="wrap">
+<p class="eyebrow">Under the hood</p><h2>Built around<br>the real toolchain.</h2>
+<p class="lead" style="margin-top:16px">Android builds depend on compatible development tools. OpenBuild's goal is to make those dependencies visible and keep build execution, diagnostics, and generated artifacts connected to the actual project.</p>
+<div class="tl rv">
+<div><h3><span>01 · RUNTIME</span>Java Development Kit</h3><ul><li>Java runtime</li><li>Java compiler</li><li>Compatibility with Gradle and Android build tools</li></ul></div>
+<div><h3><span>02 · BUILD</span>Gradle</h3><ul><li>Build tasks</li><li>Dependency resolution</li><li>Project configuration</li><li>Build execution</li></ul></div>
+<div><h3><span>03 · PLATFORM</span>Android SDK</h3><ul><li>Android platform APIs</li><li>SDK platforms</li><li>SDK configuration</li></ul></div>
+<div><h3><span>04 · PACKAGING</span>Android Build Tools</h3><ul><li>Resource processing</li><li>APK packaging</li><li>Signing utilities</li><li>DEX processing</li></ul></div>
+</div>
+<p class="note">The JDK is one component of the Android build environment; it cannot build an APK on its own. A real build depends on compatible versions of the JDK, Gradle, Android Gradle Plugin, Android SDK, Build Tools and project dependencies. ARM64 device compatibility and tool availability may add constraints, and not every desktop Android tool is available on every phone.</p>
+</div></section>
+
+<section id="roadmap"><div class="wrap">
+<p class="eyebrow">What comes next</p><h2>Built in layers.<br>Not in hype.</h2>
+<!-- Edit statuses by changing data-s (foundation | priority | planned) and the label text. No dates are promised. -->
+<ul class="rm">
+<li class="rv"><div><h3>Core Development Workflow</h3><p>Improve project navigation, source editing, and everyday project management.</p></div><span class="st" data-s="foundation">FOUNDATION</span></li>
+<li class="rv"><div><h3>Build Reliability</h3><p>Strengthen toolchain configuration, build execution, diagnostic output, and artifact handling.</p></div><span class="st" data-s="priority">PRIORITY</span></li>
+<li class="rv"><div><h3>Better Diagnostics</h3><p>Make configuration problems easier to identify and build errors easier to understand.</p></div><span class="st" data-s="planned">PLANNED</span></li>
+<li class="rv"><div><h3>Developer Experience</h3><p>Improve mobile editing, navigation, and workflow convenience.</p></div><span class="st" data-s="planned">PLANNED</span></li>
+</ul>
+</div></section>
+
+<section id="faq" style="background:var(--mu)"><div class="wrap">
+<p class="eyebrow">Questions</p><h2>Good to know.</h2>
+<div class="faq">
+<details><summary>Is OpenBuild a website-based IDE?</summary><p>No. OpenBuild IDE is an Android development environment project. This website provides information about the product.</p></details>
+<details><summary>Can OpenBuild build real Android APKs?</summary><p>OpenBuild is designed around real Android Gradle builds. Successful builds depend on compatible project configuration, toolchain installations, dependencies, and device limitations.</p></details>
+<details><summary>Do I need a computer?</summary><p>OpenBuild focuses on development directly on Android devices. Some projects or toolchain configurations may still have limitations.</p></details>
+<details><summary>Which technologies are relevant to OpenBuild?</summary><p>Java, XML, Gradle, the Android SDK, the JDK, and Android Build Tools are part of the Android development workflow.</p></details>
+<details><summary>Where can I download OpenBuild?</summary><p>The official download destination will be linked here when the release URL is available.</p></details>
+<details><summary>Is OpenBuild open source?</summary><p>Check the official repository for the project's current licensing and source-availability information.</p></details>
+<details><summary>Can I build release APKs?</summary><p>Release builds depend on the project configuration, available toolchain, and signing setup. Consult the actual project and release documentation for supported workflows.</p></details>
+</div>
+</div></section>
+
+<section id="cta" class="cta"><div class="wrap cg">
+<div class="rv"><h2>Your next app<br>doesn't need to<br>wait for a desk.</h2>
+<p class="lead">Follow OpenBuild as it grows into a more capable Android development workspace.</p>
+<div class="row"><a class="btn p" href="#cta" data-cfg="downloadUrl">Download</a><a class="btn" href="#cta" data-cfg="githubUrl">View Source</a></div>
+<p id="cta-note" role="status" aria-live="polite"></p></div>
+<div class="frame rv"><img src="openbuild-banner-original.png" width="1672" height="941" loading="lazy" alt="OpenBuild IDE promotional banner: the IDE on an Android phone with a project tree, Java editor and build output"></div>
+</div></section>
+</main>
+<footer><div class="wrap">
+<div class="ft"><div><a class="brand" href="#top"><img src="logo.svg" width="34" height="34" alt=""><span>OpenBuild <span>IDE</span></span></a><p>A mobile-first Android development environment for coding, project management, and Android builds.</p></div>
+<ul><li><a href="#features">Features</a></li><li><a href="#roadmap">Roadmap</a></li><li><a data-cfg="githubUrl" data-hide-empty href="#" hidden>GitHub</a></li></ul></div>
+<div class="cp"><span>© <span id="yr">2026</span> OpenBuild IDE</span><span>Created by Not Rik</span></div>
+</div></footer>
+<script src="site-config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
